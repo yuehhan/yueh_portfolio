@@ -30,10 +30,12 @@
               </a>
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item moon-item">
               <a class="nav-link" href="#" @click.prevent="changeMode">
                 <i class="fas fa-moon" :class="{'tertiary': nightMode,'secondary': !nightMode}"></i>
               </a>
+              <p class="moon-text" :class="{'tertiary': nightMode,'secondary': !nightMode}" v-if="nightMode">turn the light on!</p>
+              <p class="moon-text" :class="{'tertiary tertiary-background': nightMode,'secondary secondary-background': !nightMode}" v-else>make it dark again!</p>
             </li>
 
           </ul>
@@ -109,6 +111,10 @@ a.text-light:hover {
   color: #FAC993 !important;
 }
 
+.nav-item {
+  position:relative;
+}
+
 .nav-item a {
   margin:0 10px;
 }
@@ -143,6 +149,36 @@ button:hover {
 .fa-moon:hover {
   transform:rotate(-20deg);
   transition: .3s ease;
+}
+
+.moon-text{
+  position:absolute;
+  width:100px;
+  right:-25px;
+  visibility: hidden;
+  opacity: 0;
+  top:40px;
+  right:-25px;
+  transition: all ease .5s;
+  background:#262c30;
+  padding:5px;
+  border:1px solid;
+  border-radius:10px;
+}
+
+.moon-item:hover .moon-text {
+  visibility:visible;
+  opacity:1;
+}
+
+.secondary-background {
+  color: #6BCDFA;
+  background:#EBF8FE;
+}
+
+.tertiary-background {
+  color: #FAC993;
+  background: #262c30;
 }
 
 </style>

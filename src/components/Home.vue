@@ -2,7 +2,7 @@
   <div class="color-transition home-main" :class="{ 'sugar': !nightMode, 'bg-dark': nightMode }">
     <div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="landing">
       <div class="landing-wrapper">
-        <img class="landing-image" src="../assets/landing2.svg" alt="landing-page-image">
+        <img class="landing-image" src="../assets/landing4.svg" alt="landing-page-image">
         <div class="landing-text">
           <div id="text"></div>
         </div>
@@ -72,10 +72,10 @@ export default {
     .pause(800).break({delay: 500})
     .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"self-taught"</span><span class="text-light">,</span>')
     .pause(1500).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"hard-work"</span><span class="text-light">,</span>')
+    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"passionate about software"</span><span class="text-light">,</span>')
     .pause(800).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"problem-solver"</span><span class="text-light">,</span>')
-    .pause(800).break()
+    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"creative problem-solver"</span><span class="text-light">,</span>')
+    .pause(800).break({delay:200})
     .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"cool guy"')
     .pause(2500)
     .move(-9)
@@ -85,7 +85,7 @@ export default {
     .delete(14)
     .pause(1200)
     .type('team player')
-    .move(1)
+    .move(1).pause(500)
     .type('<span class="keyword6">]</span>')
     .break({delay: 800})
     .pause(500)
@@ -112,10 +112,10 @@ export default {
     .pause(800).break({delay: 500})
     .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"self-taught"</span><span class="text-light">,</span>')
     .pause(1500).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"hard-worker"</span><span class="text-light">,</span>')
+    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"passionate about software"</span><span class="text-light">,</span>')
     .pause(800).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"problem-solver"</span><span class="text-light">,</span>')
-    .pause(800).break()
+    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"creative problem-solver"</span><span class="text-light">,</span>')
+    .pause(800).break({delay:200})
     .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"cool guy"')
     .pause(2500)
     .move(-9)
@@ -125,7 +125,7 @@ export default {
     .delete(14)
     .pause(1200)
     .type('team player')
-    .move(1)
+    .move(1).pause(500)
     .type('<span class="keyword6">]</span>')
     .break({delay: 800})
     .pause(500)
@@ -164,7 +164,6 @@ export default {
   position: absolute;
   width: 57.6%;
   height: 64%;
-  border:#0C242D solid 1px; 
   top: 23%;
   left: 36.5%;
   padding:1%;

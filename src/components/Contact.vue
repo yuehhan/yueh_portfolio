@@ -7,9 +7,10 @@
       'text-light': nightMode,
     }"
   >
+    <img src="../assets/contact.svg" alt="contact picture" class="contact-pic">
     <div class="container">
       <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
-        <span class="title text-center" :class="{ primary: !nightMode, secondary: nightMode }">contact.</span>
+        <span class="title text-center" :class="{ primary: !nightMode, secondary: nightMode }">contact me.</span>
       </div>
       <div class="line-break"><hr></div>
 
@@ -157,7 +158,22 @@ export default {
 <style scoped>
 .contact-main {
   padding: 1.5rem 0;
+  position: relative;
 }
+
+.contact-pic {
+  position:absolute;
+  right:5%;
+  bottom:10%;
+  height:60%;
+}
+
+@media(max-width: 1500px){
+  .contact-pic{
+    display:none;
+  }
+}
+
 
 .contact-boxes {
   margin: 1rem 0;

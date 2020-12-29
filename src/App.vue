@@ -6,7 +6,7 @@
       <Home :nightMode="nightMode" />
       <About id="about" :nightMode="nightMode" />
       <Skills id="skills" :nightMode="nightMode" />
-      <Portfolio id="portfolio" :nightMode="nightMode" />
+      <Portfolio id="projects" :nightMode="nightMode" />
       <Contact id="contact" :nightMode="nightMode" />
       <Footer :nightMode="nightMode" />
     </div>
@@ -41,7 +41,7 @@ export default {
     };
   },
   mounted: function() {
-    ["about", "contact", "skills", "portfolio"].forEach((l) => {
+    ["about", "contact", "skills", "projects"].forEach((l) => {
       if (window.location.href.includes(l)) {
         var elementPosition = document.getElementById(l).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
@@ -57,6 +57,7 @@ export default {
         this.$router.push(`/`);
         window.scrollTo({ top: -80, behavior: "smooth" });
       } else {
+        console.log(ele)
         var elementPosition = document.getElementById(ele).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
         if (this.$router.history.current.path !== `/${ele}`)

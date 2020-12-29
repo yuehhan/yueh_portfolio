@@ -1,5 +1,7 @@
 <template>
-  <div :class="{ 'sugar': !nightMode, 'bg-dark': nightMode }" class="color-transition">
+  <div :class="{ 'sugar': !nightMode, 'bg-dark': nightMode }" class="color-transition skills-main">
+    <img src="../assets/skills.svg" alt="businessman picture" class="skills-pic" v-if="nightMode">
+    <img src="../assets/skills2.svg" alt="businessman picture" class="skills-pic" v-else>
     <div class="container">
       <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
         <span class="title text-center" :class="{ primary: !nightMode, secondary: nightMode }">skills.</span>
@@ -18,10 +20,10 @@
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
           data-aos-once="true"          
-          :style="{ 'transition-delay': index / 4.2 + 's' }"
+          :style="{ 'transition-delay': index / 4 + 's' }"
         >
           <div :class="{quaternary: !nightMode, tertiary: nightMode}"><i :class="skill.icon"></i></div>
-          <div class="title2">{{ skill.title }}</div>
+          <div class="title2" :class="{quaternary: !nightMode, tertiary: nightMode}">{{ skill.title }}</div>
           <div class="line-break"><hr></div>
           <span class="title3">{{ skill.info.join(", ") }}</span>
         </div>
@@ -50,6 +52,16 @@ export default {
 </script>
 
 <style scoped>
+.skills-main {
+  position:relative;
+}
+
+.skills-pic {
+  position:absolute;
+  height:120%;
+  top:-10%;
+}
+
 .container {
   padding: 1.5rem 0;
 }
@@ -71,6 +83,12 @@ export default {
   .skill {
     flex: 0 0 33.3%;
     max-width: 33.3%;
+  }
+}
+
+@media(max-width: 1500px){
+  .skills-pic{
+    display:none;
   }
 }
 
