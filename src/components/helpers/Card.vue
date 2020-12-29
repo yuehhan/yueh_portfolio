@@ -37,17 +37,17 @@
           >
           </p>
         </div>
-        <div class="text-center mt-2">
+        <div class="text-center mt-2 card-buttons">
           <button
             href=""
-            class="btn-sm btn btn-outline-secondary no-outline"
+            class="btn-sm btn btn-outline-secondary no-outline card-button"
             @click.prevent="showModal"
           >
             read more
           </button>
           <button
             href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-4"
+            class="btn-sm btn btn-outline-secondary no-outline card-button"
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
@@ -109,7 +109,6 @@ img {
   height: 110px;
   max-height: 130px;
   overflow: auto;
-  text-align: justify;
 }
 
 div.img-div {
@@ -117,17 +116,14 @@ div.img-div {
   width: 100%;
   height: 100%;
 }
-.pborder-top {
-  border-top: 1px solid rgb(193, 193, 193);
-}
 
 .pcard {
   background-color: rgb(255, 255, 255);
   border-radius: 7px;
   border: none;
-  box-shadow: 1px 1px 12px rgb(233, 233, 233);
+  box-shadow: 1px 1px 12px #6BCDFA;
   transition: all 0.5s;
-  height: 460px;
+  min-height: 510px;
 }
 
 .pcard:hover {
@@ -140,9 +136,9 @@ div.img-div {
   border-radius: 7px;
   border: none;
   background-color: #30363a !important;
-  /* box-shadow: 1px 1px 12px rgb(53, 53, 53); */
+  box-shadow: 1px 1px 12px rgb(53, 53, 53);
   transition: all 0.5s;
-  height: 460px;
+  min-height: 510px;
 }
 
 .pcard-dark:hover {
@@ -155,6 +151,12 @@ div.img-div {
   border-top: 1px solid rgb(220, 220, 220);
   z-index: -1;
   background-color: rgb(253, 254, 255);
+}
+
+.card-button {
+  display:block;
+  margin:5px auto;
+  width:100%;
 }
 
 .title {

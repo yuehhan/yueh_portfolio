@@ -2,7 +2,7 @@
   <div class="portfolio-main color-transition" :class="{'white': !nightMode, 'bg-dark2': nightMode}">
     <div class="container">
       <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
-        <span class="title text-center" :class="{ primary: !nightMode, secondary: nightMode }">portfolio.</span>
+        <span class="title text-center" :class="{ primary: !nightMode, secondary: nightMode }">personal projects.</span>
       </div>
       <div class="line-break"><hr></div>
 
