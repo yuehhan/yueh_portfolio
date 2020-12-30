@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-main" :class="{'white': !nightMode,'bg-dark': nightMode}">
+  <div class="footer-main color-transition" :class="{'white': !nightMode,'bg-dark': nightMode}">
     <div class="container">
       <div class="container-wrapper">
         <span class="origin" :class="{'tertiary': nightMode,'quaternary': !nightMode,}"> made with <i class="fas fa-heart"></i> using Vue.js</span>
