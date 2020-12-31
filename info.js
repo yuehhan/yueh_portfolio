@@ -2,7 +2,7 @@ const info = {
     name: "Yueh Han",
     flat_picture: require('./src/assets/yueh.png'),
     description: 
-    "My name is Yueh Han and I am currently working as a software developer in the NY area. I discovered software 2 years ago and it has quickly become my main passion. "+
+    "My name is Yueh Han and I am currently working as a software developer in the NY area. I discovered software 2 years ago and it has quickly become my passion. "+
     "I often think about the quote from Marc Andreessen that 'software is eating the world'. This rings true especially today. My background in tech sales allowed me to see the importance of software applications " +
     "in businesses. I saw the speed of our innovation and thought to myself: 'why only <u>sell</u> software when I can learn to <u>create</u> software'. So, I taught myself to code on nights and weekends. "+
     "<br><br>" +
@@ -51,7 +51,7 @@ const info = {
             category: 'Website',
             date: 'January 2020',
             github: 'https://github.com/yuehhan/MyLocation',
-            visit: 'https://yuehwhan.com/MyLocation/',
+            visit: 'https://yueh-han.com/MyLocation/',
             description: 'This is a social media site where users can create a profile and share their traveling experiences. Users can attach images, write about their experience, and tag their location using Google Maps. I first thought of this ' +
             "after vacationing in Seattle. I wanted a social media site that could also be a travel log. This app is built using the MERN stack. So that is React as the front end, Express and Node for the backend to handle all of the API calls and authentication/authorization, "+
             "and MongoDB as the database. The frontend is hosted on Github pages and the backend is hosted on Heroku. This is my first full-stack project I've really enjoyed creating this app, not to mention all of the lessons learned."
