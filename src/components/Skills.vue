@@ -1,7 +1,5 @@
 <template>
   <div :class="{ 'sugar': !nightMode, 'bg-dark': nightMode }" class="color-transition skills-main">
-    <img src="../assets/skills.svg" alt="businessman picture" class="skills-pic" v-if="nightMode">
-    <img src="../assets/skills2.svg" alt="businessman picture" class="skills-pic" v-else>
     <div class="container">
       <div class="text-center" data-aos="fade" data-aos-once="true" data-aos-duration="1000">
         <span class="title text-center" :class="{ primary: !nightMode, secondary: nightMode }">skills.</span>

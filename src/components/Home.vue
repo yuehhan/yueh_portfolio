@@ -2,7 +2,7 @@
   <div class="color-transition home-main" :class="{ 'sugar': !nightMode, 'bg-dark': nightMode }">
     <div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="landing">
       <div class="landing-wrapper">
-        <img class="landing-image" src="../assets/landing4.svg" alt="landing-page-image">
+        <img class="landing-image" src="../assets/newest_landing.svg" alt="landing-page-image">
         <div class="landing-text">
           <div id="text"></div>
         </div>
@@ -54,85 +54,48 @@ export default {
     },
   },
   mounted: function(){
-    new TypeIt("#text", {
-      speed: 50,
-    })
-    .type('<span class="keyword1">class</span> <span class="keyword2">yueh</span> <span class="keyword1">extends</span> <span class="keyword2">softwareDeveloper</span> <span class="keyword1">{</span>')
-    .pause(800).break({delay: 800})
-    .type('&emsp; <span class="keyword1">constructor</span><span class="keyword4">() {</span>')
-    .pause(800).break({delay: 800})
-    .type('&emsp; &emsp; <span class="keyword1">let</span> <span class="keyword5">my</span> <span class="text-light">=</span> <span class="keyword1">this</span><span class="text-light">;</span>')
-    .pause(800).break({delay: 500})
-    .type('&emsp; &emsp; <span class="keyword5">my</span>.<span class="keyword5">fullName</span> <span class="text-light">=</span> <span class="keyword3">"Yueh Han"</span><span class="text-light">;</span>')
-    .pause(800).break({delay: 500})
-    .type('&emsp; &emsp; <span class="keyword5">my</span>.<span class="keyword5">age</span> <span class="text-light">=</span> <span class="keyword5">new</span> <span class="keyword2">Date</span><span class="keyword6">()</span>'+
-    '<span class="keyword4">.getFullYear</span><span class="keyword6">()</span> <span class="text-light">-</span> <span class="keyword7">1996</span><span class="text-light">;</span>')
-    .pause(800).break({delay: 800})
-    .type('&emsp; &emsp; <span class="keyword5">my</span>.<span class="keyword5">traits</span> <span class="text-light">=</span> <span class="keyword6">[</span>  <span class="keyword3">"full-stack developer"</span><span class="text-light">,</span>')
-    .pause(800).break({delay: 500})
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"self-taught"</span><span class="text-light">,</span>')
-    .pause(1500).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"passionate about software"</span><span class="text-light">,</span>')
-    .pause(800).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"creative problem-solver"</span><span class="text-light">,</span>')
-    .pause(800).break({delay:200})
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"cool guy"')
-    .pause(2500)
-    .move(-9)
-    .type('super ')
-    .pause(1200)
-    .move(8)
-    .delete(14)
-    .pause(1200)
-    .type('team player')
-    .move(1).pause(500)
-    .type('<span class="keyword6">]</span>')
-    .break({delay: 800})
-    .pause(500)
-    .type('&emsp; <span class="keyword4">}</span>')
-    .break({delay: 800})
-    .type('<span class="keyword1">}</span>')
-    .go();
-
-    new TypeIt("#text2", {
-      speed: 50,
-    })
-    .type('<span class="keyword1">class</span> <span class="keyword2">yueh</span> <span class="keyword1">extends</span> <span class="keyword2">softwareDeveloper</span> <span class="keyword1">{</span>')
-    .pause(800).break({delay: 800})
-    .type('&emsp; <span class="keyword1">constructor</span><span class="keyword4">() {</span>')
-    .pause(800).break({delay: 800})
-    .type('&emsp; &emsp; <span class="keyword1">let</span> <span class="keyword5">my</span> <span class="text-light">=</span> <span class="keyword1">this</span><span class="text-light">;</span>')
-    .pause(800).break({delay: 500})
-    .type('&emsp; &emsp; <span class="keyword5">my</span>.<span class="keyword5">fullName</span> <span class="text-light">=</span> <span class="keyword3">"Yueh Han"</span><span class="text-light">;</span>')
-    .pause(800).break({delay: 500})
-    .type('&emsp; &emsp; <span class="keyword5">my</span>.<span class="keyword5">age</span> <span class="text-light">=</span> <span class="keyword5">new</span> <span class="keyword2">Date</span><span class="keyword6">()</span>'+
-    '<span class="keyword4">.getFullYear</span><span class="keyword6">()</span> <span class="text-light">-</span> <span class="keyword7">1996</span><span class="text-light">;</span>')
-    .pause(800).break({delay: 800})
-    .type('&emsp; &emsp; <span class="keyword5">my</span>.<span class="keyword5">traits</span> <span class="text-light">=</span> <span class="keyword6">[</span>  <span class="keyword3">"full-stack developer"</span><span class="text-light">,</span>')
-    .pause(800).break({delay: 500})
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"self-taught"</span><span class="text-light">,</span>')
-    .pause(1500).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"passionate about software"</span><span class="text-light">,</span>')
-    .pause(800).break()
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"creative problem-solver"</span><span class="text-light">,</span>')
-    .pause(800).break({delay:200})
-    .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"cool guy"')
-    .pause(2500)
-    .move(-9)
-    .type('super ')
-    .pause(1200)
-    .move(8)
-    .delete(14)
-    .pause(1200)
-    .type('team player')
-    .move(1).pause(500)
-    .type('<span class="keyword6">]</span>')
-    .break({delay: 800})
-    .pause(500)
-    .type('&emsp; <span class="keyword4">}</span>')
-    .break({delay: 800})
-    .type('<span class="keyword1">}</span>')
-    .go();
+    var ids = ["#text", "#text2"]
+    for(var id of ids){
+      new TypeIt(id, {
+        speed: 50,
+      })
+      .type('<span class="keyword1">class</span> <span class="keyword2">yueh</span> <span class="keyword1">extends</span> <span class="keyword2">softwareDeveloper</span> <span class="keyword1">{</span>')
+      .pause(800).break({delay: 800})
+      .type('&emsp; <span class="keyword1">constructor</span><span class="keyword4">() {</span>')
+      .pause(800).break({delay: 800})
+      .type('&emsp; &emsp; <span class="keyword1">let</span> <span class="keyword5">my</span> <span class="text-light">=</span> <span class="keyword1">this</span><span class="text-light">;</span>')
+      .pause(800).break({delay: 500})
+      .type('&emsp; &emsp; <span class="keyword5">my</span><span class="text-light">.</span><span class="keyword5">fullName</span> <span class="text-light">=</span> <span class="keyword3">"Yueh Han"</span><span class="text-light">;</span>')
+      .pause(800).break({delay: 500})
+      .type('&emsp; &emsp; <span class="keyword5">my</span><span class="text-light">.</span><span class="keyword5">age</span> <span class="text-light">=</span> <span class="keyword5">new</span> <span class="keyword2">Date</span><span class="keyword6">()</span>'+
+      '<span class="keyword4">.getFullYear</span><span class="keyword6">()</span> <span class="text-light">-</span> <span class="keyword7">1996</span><span class="text-light">;</span>')
+      .pause(800).break({delay: 800})
+      .type('&emsp; &emsp; <span class="keyword5">my</span><span class="text-light">.</span><span class="keyword5">traits</span> <span class="text-light">=</span> <span class="keyword6">[</span>  <span class="keyword3">"full-stack developer"</span><span class="text-light">,</span>')
+      .pause(800).break({delay: 500})
+      .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"self-taught"</span><span class="text-light">,</span>')
+      .pause(1500).break()
+      .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"passionate about software"</span><span class="text-light">,</span>')
+      .pause(800).break()
+      .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"creative problem-solver"</span><span class="text-light">,</span>')
+      .pause(800).break({delay:200})
+      .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"cool guy"')
+      .pause(2500)
+      .move(-9)
+      .type('super ')
+      .pause(1200)
+      .move(8)
+      .delete(14)
+      .pause(1200)
+      .type('team player')
+      .move(1).pause(500)
+      .type('<span class="keyword6">]</span>')
+      .break({delay: 800})
+      .pause(500)
+      .type('&emsp; <span class="keyword4">}</span>')
+      .break({delay: 800})
+      .type('<span class="keyword1">}</span>')
+      .go();
+    }
   }
   
 };
@@ -140,7 +103,8 @@ export default {
 
 <style scoped>
 .home-main {
-  height:100%;
+  height:75vh;
+  /* background-image:url(../assets/clouds.jpg); */
 }
 
 .landing {
@@ -153,6 +117,7 @@ export default {
   padding-top:5%;
   position:relative;
   display: inline-block;
+  margin: auto 0;
 }
 
 .landing-image {
@@ -190,6 +155,9 @@ export default {
   }
   .mobile-landing {
     display:block;
+  }
+  .home-main {
+    height:100%;
   }
 }
 

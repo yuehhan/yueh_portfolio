@@ -11,7 +11,7 @@
         </div>
         
         <div class="content-half">
-          <span class="home-title" :class="{ quaternary: !nightMode, tertiary: nightMode }">greetings!</span>
+          <span class="home-title" :class="{ quaternary: !nightMode, tertiary: nightMode }">you had me at 'hello... world!'</span>
           <div>
             <p v-html="description"></p>
           </div>

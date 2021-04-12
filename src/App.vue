@@ -120,7 +120,8 @@ body {
 }
 
 .sugar {
-  background-color:#EBF8FE;
+  /* background-color:#EBF8FE; */
+  background-image: linear-gradient(#EBF8FE, white, #EBF8FE);
 }
 
 .white {

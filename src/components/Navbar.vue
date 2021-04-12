@@ -34,8 +34,6 @@
               <a class="nav-link" href="#" @click.prevent="changeMode">
                 <i class="fas fa-moon" :class="{'tertiary': nightMode,'secondary': !nightMode}"></i>
               </a>
-              <p class="moon-text" :class="{'tertiary': nightMode,'secondary': !nightMode}" v-if="nightMode">turn the light on!</p>
-              <p class="moon-text" :class="{'tertiary tertiary-background': nightMode,'secondary secondary-background': !nightMode}" v-else>make it dark again!</p>
             </li>
 
           </ul>
