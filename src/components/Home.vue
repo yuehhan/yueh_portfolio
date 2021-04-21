@@ -59,19 +59,21 @@ export default {
       new TypeIt(id, {
         speed: 50,
       })
-      .type('<span class="keyword1">class</span> <span class="keyword2">yueh</span> <span class="keyword1">extends</span> <span class="keyword2">softwareDeveloper</span> <span class="keyword1">{</span>')
+      .type('<span class="keyword1">class</span> <span class="keyword2">Yueh</span> <span class="keyword1">extends</span> <span class="keyword2">softwareDeveloper</span> <span class="keyword1">{</span>')
       .pause(800).break({delay: 800})
       .type('&emsp; <span class="keyword1">constructor</span><span class="keyword4">() {</span>')
       .pause(800).break({delay: 800})
-      .type('&emsp; &emsp; <span class="keyword1">let</span> <span class="keyword5">my</span> <span class="text-light">=</span> <span class="keyword1">this</span><span class="text-light">;</span>')
+      .type('&emsp; &emsp; <span class="keyword1">const</span> <span class="keyword5">my</span> <span class="text-light">=</span> <span class="keyword1">this</span><span class="text-light">;</span>')
       .pause(800).break({delay: 500})
       .type('&emsp; &emsp; <span class="keyword5">my</span><span class="text-light">.</span><span class="keyword5">fullName</span> <span class="text-light">=</span> <span class="keyword3">"Yueh Han"</span><span class="text-light">;</span>')
       .pause(800).break({delay: 500})
       .type('&emsp; &emsp; <span class="keyword5">my</span><span class="text-light">.</span><span class="keyword5">age</span> <span class="text-light">=</span> <span class="keyword5">new</span> <span class="keyword2">Date</span><span class="keyword6">()</span>'+
       '<span class="keyword4">.getFullYear</span><span class="keyword6">()</span> <span class="text-light">-</span> <span class="keyword7">1996</span><span class="text-light">;</span>')
       .pause(800).break({delay: 800})
-      .type('&emsp; &emsp; <span class="keyword5">my</span><span class="text-light">.</span><span class="keyword5">traits</span> <span class="text-light">=</span> <span class="keyword6">[</span>  <span class="keyword3">"full-stack developer"</span><span class="text-light">,</span>')
-      .pause(800).break({delay: 500})
+      .type('&emsp; &emsp; <span class="keyword5">my</span><span class="text-light">.</span><span class="keyword5">traits</span> <span class="text-light">=</span> <span class="keyword6">[</span>')
+      .pause(800).break({delay: 300})
+      .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"full-stack developer"</span><span class="text-light">,</span>')
+      .break({delay:300})
       .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"self-taught"</span><span class="text-light">,</span>')
       .pause(1500).break()
       .type('&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; <span class="keyword3">"passionate about software"</span><span class="text-light">,</span>')
@@ -87,8 +89,8 @@ export default {
       .delete(14)
       .pause(1200)
       .type('team player')
-      .move(1).pause(500)
-      .type('<span class="keyword6">]</span>')
+      .move(1).pause(500).break()
+      .type('&emsp; &emsp; <span class="keyword6">]</span>')
       .break({delay: 800})
       .pause(500)
       .type('&emsp; <span class="keyword4">}</span>')
@@ -128,8 +130,8 @@ export default {
 .landing-text {
   position: absolute;
   width: 57.6%;
-  height: 64%;
-  top: 23%;
+  height: 65%;
+  top: 21%;
   left: 36.5%;
   padding:1%;
   overflow:hidden;

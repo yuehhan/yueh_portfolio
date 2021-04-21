@@ -29,7 +29,7 @@ const info = {
         },
         {
             title: 'tools & others',
-            info: ['Docker', 'Git/Github','AWS S3', 'LAMP stack', 'Ubuntu', 'Apache', 'Agile', 'Scrum', 'JIRA', 'Heroku', 'Firebase'],
+            info: ['Docker', 'Git/Github','AWS', 'LAMP stack', 'Ubuntu', 'Apache', 'Agile', 'Scrum', 'JIRA', 'Heroku', 'Firebase'],
             icon: 'fas fa-wrench'
         },
     ],
