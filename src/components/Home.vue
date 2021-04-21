@@ -2,7 +2,7 @@
   <div class="color-transition home-main" :class="{ 'sugar': !nightMode, 'bg-dark': nightMode }">
     <div data-aos="fade" data-aos-once="true" data-aos-duration="1000" class="landing">
       <div class="landing-wrapper">
-        <img class="landing-image" src="../assets/newest_landing.svg" alt="landing-page-image">
+        <img class="landing-image" src="../assets/landing_final.svg" alt="landing-page-image">
         <div class="landing-text">
           <div id="text"></div>
         </div>
