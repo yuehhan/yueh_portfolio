@@ -57,7 +57,6 @@ export default {
         this.$router.push(`/`);
         window.scrollTo({ top: -80, behavior: "smooth" });
       } else {
-        console.log(ele)
         var elementPosition = document.getElementById(ele).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
         if (this.$router.history.current.path !== `/${ele}`)
