@@ -7,12 +7,6 @@
           <div id="text"></div>
         </div>
       </div>
-
-      <div class="mobile-landing">
-        <div class="mobile-text">
-          <div id="text2"></div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
@@ -55,10 +49,8 @@ export default {
   },
   mounted: function(){
     let id = "#text";
-    if(screen.width < 1100){
-      id = "#text2";
-    }
-    new TypeIt(id, {
+
+    const type = new TypeIt(id, {
       speed: 50,
     })
     .type('<span class="keyword1">class</span> <span class="keyword2">Yueh</span> <span class="keyword1">extends</span> <span class="keyword2">SoftwareDeveloper</span> <span class="keyword1">{</span>')
@@ -98,7 +90,8 @@ export default {
     .type('&emsp; <span class="keyword4">}</span>')
     .break({delay: 800})
     .type('<span class="keyword1">}</span>')
-    .go();
+
+    type.go()
   }
   
 };
@@ -136,34 +129,27 @@ export default {
   overflow:hidden;
 }
 
-.mobile-landing{
-  display:none;
-  width:100%;
-  height:90vh;
-  padding:2%;
-  background: #0C242D;
-}
-
-.mobile-text {
-  display:block;
-  height:100%;
-  width:100%;
-}
-
 @media only screen and (max-width: 1100px) {
   .landing-wrapper{
+    width:100%;
+    height:90vh;
+    padding:2%;
+    background: #0C242D;
+  }
+  .landing-text{
+    display:block;
+    height:100%;
+    width:100%;
+    left:0;
+  }
+  .landing-image{
     display:none;
   }
-  .mobile-landing {
-    display:block;
-  }
+
   .home-main {
     height:100%;
     display:block;
   }
-}
-
-@media only screen and (max-width: 1100px) {
   img {
     object-fit: cover;
     height: 200px;

@@ -24,7 +24,7 @@ const info = {
         },
         {
             title: 'frameworks & libraries',
-            info: ['Codeigniter', 'Vue.js', 'React.js', 'Django', 'jQuery', 'Node.js', 'Express.js', 'Gatsby.js', 'Handlebars.js', 'Bootstrap', 'D3.js'],
+            info: ['CodeIgniter', 'Vue.js', 'React.js', 'jQuery', 'Node.js', 'Express.js', 'Gatsby.js', 'Django', 'Handlebars.js', 'Bootstrap', 'D3.js'],
             icon: 'fas fa-sitemap'
         },
         {
