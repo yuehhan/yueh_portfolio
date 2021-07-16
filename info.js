@@ -8,7 +8,7 @@ const info = {
     "<br></br> "+ 
     "I enjoy the problem-solving aspects of programming the most. Whether it is a front-end issue that may require a creative touch, " +
     "or something in the backend that prioritizes efficiency and optimization, finding the best solution is always rewarding. " +
-    "I love learning about design principles and I'm always experiementing with new ideas. Feel free to contact me if you have any questions!",
+    "I love learning about design principles and I'm always experimenting with new ideas. Feel free to contact me if you have any questions!",
 
     links: {
         linkedin: "https://www.linkedin.com/in/yueh-han-656b91171/",
